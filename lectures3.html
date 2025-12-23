@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read And Revise</title>
+</head>
+
+<body id="body">
+
+    <center>
+        <h1>HTML Learning Hub - Complete Beginner Guide</h1>
+    </center>
+
+    <br>
+    <center><mark>Learn | Revise | Practice</mark></center>
+    <hr>
+    <center>
+        <table>
+            <tr>
+                <td><a href="Home.html"><b>Home</b></a></td>
+                <td><a href="contact.html"><b>Contact</b></a></td>
+                <td><a href="lecture1.html"><b>documentation</b></a></td>
+                <td><a href="course.html"><b>Courses</b></a></td>
+            </tr>
+        </table>
+    </center>
+    <hr>
+    <br>
+    <center>
+        <h1>HTML Notes 📘 – Read & Revision</h1>
+    </center>
+    <br>
+    <h2>📑 Table of Contents</h2>
+
+    <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#understanding file-paths">Understanding File Paths</a></li>
+        <li><a href="#file path-types">Types of File Paths</a></li>
+        <li><a href="#relative-path">Relative Path</a></li>
+        <li><a href="#absolute-path">Absolute Path</a></li>
+        <li><a href="#why-boilerplate">Why Use Boilerplate Code</a></li>
+        <li><a href="#utf8">UTF-8</a></li>
+        <li><a href="#ascii">ASCII Values</a></li>
+        <li><a href="#why-utf8">Why Use UTF-8</a></li>
+        <li><a href="#div">div tag</a></li>
+        <li><a href="#class-id">class & id</a></li>
+        <li><a href="#semantic">Header, Main & Footer</a></li>
+    </ul>
+
+    <br>
+    <hr>
+    <h2 id="introduction">1. Introduction</h2>
+    <p>Jab hum HTML, CSS, JS ya kisi bhi web development kaam karte hain, toh hume files (HTML, CSS, images, JS scripts)
+        ko
+        link karna padta hai. Ye tabhi sahi chalti hain jab hum unke file paths (rasta) ko sahi likhte hain. Saath hi
+        boilerplate code, encoding (UTF-8), aur semantic tags ka bhi use hota hai.</p>
+    <a href="#body">Back To Top</a>
+    <h2 id="understanding file-paths">Understanding File Paths</h2>
+    <p>File path ka matlab hota hai: file tak pahunchne ka address. <br>
+        Jaise tumhare ghar ka address hota hai, waise hi system mein ek file ko dhoondhne ka address hota hai.</p>
+    <a href="#body">Back To Top</a>
+    <h2 id="file path-types">Types of File Paths</h2>
+    <p>Do main types hote hain:</p>
+    <ol>
+        <li>Relative Path</li>
+        <li>Absolute Path</li>
+    </ol>
+
+    <h2 id="relative-path">Relative Path</h2>
+    <p>Ye file ka address current HTML file ke respect (relative) hota hai.</p>
+    <p><b>Example -</b> img src="images/logo.png"></p>
+    <p>Matlab HTML file ke folder ke andar images naam ka folder hai, aur usme logo.png image hai.</p>
+
+    <details>
+        <summary>Example of Relative Path</summary>
+        <textarea name="" id="">
+                <!DOCTYPE html>
+                <html>
+                
+                <head>
+                    <title>Relative Path Example</title>
+                    <link rel="stylesheet" href="css/style.css">
+                </head>
+                
+                <body>
+                    <img src="images/logo.png" alt="Logo">
+                </body>
+                
+                </html>
+
+            </textarea>
+    </details>
+
+    <h2 id="absolute-path">Absolute Path</h2>
+    <p>Absolute path ka matlab hai poora address, jisme drive ya domain name bhi aata hai.</p>
+    <p>Internet par jab kisi external file ko use karna ho (jaise CDN, image URL), tab absolute path use hota hai.</p>
+    <p></p>
+    <details>
+        <summary>Example of Absolute Path</summary>
+        <textarea name="" id="">
+        <img src="C:/Users/Rajan/Desktop/project/images/logo.png">
+
+            </textarea>
+    </details>
+    <a href="#body">Back To Top</a>
+
+    <h2 id="why-boilerplate">Why Use Boilerplate Code</h2>
+    <p>Boilerplate code ka matlab hai ready-made starting template.</p>
+    <p>Har baar HTML likhte waqt same basic structure type karne ki jagah ek boilerplate use karte hain.</p>
+    <details>
+        <summary>Example of Boilerplate Code</summary>
+        <textarea name="" id="">
+                <!DOCTYPE html>
+                <html lang="en">
+                
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+                </head>
+                
+                <body>
+                
+                </body>
+                
+                </html>
+
+            </textarea>
+    </details>
+    <br>
+    <a href="#body">Back To Top</a>
+    <h2 id="utf8">UTF-8</h2>
+    <p>UTF-8 ek character encoding system hai.</p>
+    <p>Ye batata hai ki computer characters (A, B, 1, @, emoji 😃) ko kaise samjhe.</p>
+    <a href="#body">Back To Top</a>
+
+    <h2 id="ascii">ASCII Values</h2>
+    <p>ASCII ek purana system hai jo sirf 0–127 numbers tak characters ko encode karta tha.</p>
+    <p>example A = 65, B = 66, a = 97.</p>
+    <p>Limitation: Sirf English alphabets aur kuch symbols ko hi support karta tha.</p>
+    <a href="#body">Back To Top</a>
+
+    <h2 id="why-utf8">Why Use UTF-8</h2>
+    <p>UTF-8 duniya ki sabhi languages aur emoji tak ko support karta hai</p>
+    <p>Isiliye <b>meta charset="UTF-8"></b> likha jata hai HTML head me.</p>
+    <a href="#body">Back To Top</a>
+
+    <h2 id="div">div tag</h2>
+    <p><b>div</b> ek container hai jo content ko group karta hai.</p>
+    <p>Ye non-semantic hota hai (matlab iska koi special meaning nahi hota).
+        <br>
+        Mostly layout banane ke liye use hota hai.
+    </p>
+    <a href="#body">Back To Top</a>
+
+    <h2 id="class-id">class & id</h2>
+    <p><b>class</b></p>
+    <p>class: Ek naam jo multiple elements ko style ya target karne ke liye use hota hai.</p>
+    <details>
+        <summary>Example </summary>
+        <textarea name="" id="">
+                <div class="box"></div>
+            </textarea>
+    </details>
+
+    <p><b>Id</b></p>
+    <p>id: Ek unique naam (sirf ek element ke liye).</p>
+    <details>
+        <summary>Example </summary>
+        <textarea name="" id="">
+            <div id="header"></div>
+
+                </textarea>
+    </details>
+    <a href="#body">Back To Top</a>
+
+    <h2 id="semantic">Semantic</h2>
+    <p>Ye semantic tags hain:</p>
+    <ul>
+        <li> <b>header></b>: Top section (logo, nav bar, title).</li>
+        <li> <b>main></b>: Page ka main content.</li>
+        <li><b> footer></b>: Bottom section (copyright, links).</li>
+    </ul>
+    <a href="#body">Back To Top</a>
+
+    <br>
+    <br>
+    <br>
+    <a href="Home.html"><b>Go to Home</b></a>
+    <br>
+    <a href="lecture1.html"><b>go page 1</b></a>
+    <br>
+    <a href="lecturs2.html"><b>Go Page 2</b></a>
+    <br>
+    <a href="lectures4.html"><b>Go to Page 4</b></a>
+    <br>
+    <a href="internetworklecture.html"><b>Go to Page 5</b></a>
+    <br>
+    <a href="lecture6.html"><b>Go to Page 6</b></a>
+    <br>
+    <br>
+    <br>
+
+
+    <hr>
+    <center>
+        <nav>
+            <span><b>🎓 Happy Learning! Keep Practicing HTML 💪</b></span>
+            <p>Made by <b>Rajan Awasthi</b> © 2025 HTML Learning Hub | Made for Beginners</p>
+        </nav>
+    </center>
+    <hr>
+
+</body>
+
+</html>

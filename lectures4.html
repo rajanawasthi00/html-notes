@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read And Revise</title>
+</head>
+
+<body id="body">
+
+    <center>
+        <h1>HTML Learning Hub - Complete Beginner Guide</h1>
+    </center>
+
+    <br>
+    <center><mark>Learn | Revise | Practice</mark></center>
+    <hr>
+    <center>
+        <table>
+            <tr>
+                <td><a href="Home.html"><b>Home</b></a></td>
+                <td><a href="contact.html"><b>Contact</b></a></td>
+                <td><a href="lecture1.html"><b>documentation</b></a></td>
+                <td><a href="course.html"><b>Courses</b></a></td>
+            </tr>
+        </table>
+    </center>
+    <hr>
+    <br>
+
+
+    <center>
+        <h1>HTML Notes 📘 – Read & Revision</h1>
+    </center>
+    <br>
+    <h2>📑 Table of Contents</h2>
+
+    <ul>
+
+        <li><a href="#what is html">What is an HTML Form?</a></li>
+        <li><a href="#form tag">form Tag</a></li>
+        <li><a href="#input tag">Input Tag</a></li>
+        <li><a href="#label tag">label Tag</a></li>
+        <li><a href="#form structures">Detailed Explanation of Form Structure</a></li>
+        <li><a href="#Value attributes">Name & Value Attributes</a></li>
+        <li><a href="#Attribute">Using name Attribute</a></li>
+        <li><a href="#Radio BUttons">Radio Buttons</a></li>
+        <li><a href="#Attribute for">for Attribute</a></li>
+        <li><a href="#setting">Setting Radio Button Values</a></li>
+        <li><a href="#Checkbox">Checkboxes</a></li>
+        <li><a href="#placeholder">Placeholder Attribute</a></li>
+        <li><a href="#types of Input">Types of Input</a></li>
+        <li><a href="#textarea">textarea Tag</a></li>
+        <li><a href="#select tag">select Tag</a></li>
+        <li><a href="#option">option Tag</a></li>
+        <li><a href="#button">button Tag</a></li>
+    </ul>
+
+    <br>
+    <hr>
+    <h2 id="what is html">What is an HTML Form?</h2>
+    <p>HTML form user se input collect karke server ko bhejne ka standard tareeqa hai, jaise login, signup, order,
+        registration, ya search</p>
+    <p>Server par data key=value pairs ke roop me jata hai, jahan key input ka name hota hai aur value user ka bharaya
+        hua
+        data.</p>
+    <a href="#body">Back To Top</a>
+
+    <h2 id="form tag">form Tag</h2>
+    <p>
+    <form> element form ka container hai jisme sab form controls (input, label, textarea, select, button) hote hain.
+        Action aur method attributes define karte hain data kahan aur kaise submit hoga</p>
+        <details>
+            <summary>Example</summary>
+            <textarea name="" id="">
+        <form action="/submit" method="get"> </form>
+    </textarea>
+        </details>
+        <a href="#body">Back To Top</a>
+
+        <h2 id="input tag">input Tag</h2>
+        <p><input> single-line input field banata hai aur type attribute ke hisaab se behavior change hota hai (text,
+            number,
+            email, password, date, file, etc.).</p>
+        <p>Har input ko meaningful name dena zaroori hai taaki backend samajh sake kaunsa field hai.</p>
+        <details>
+            <summary>Example</summary>
+            <textarea name="" id="">
+        <input type="text" name="username" />
+        <input type="number" name="age" />
+
+    </textarea>
+        </details>
+        <a href="#body">Back To Top</a>
+
+        <h2 id="label tag">label Tag</h2>
+        <p><label> user ko batata hai ki iss input me kya bharna hai, aur accessibility ke liye for=id ke through input
+                se link
+                hota hai.</p>
+        <p>Label par click se linked input focus/checked ho jata hai, jo UX improve karta hai.</p>
+
+        <details>
+            <summary>Example</summary>
+            <textarea name="" id="">
+        <label for="age">Age</label>
+        <input id="age" type="number" name="age" />
+    </textarea>
+        </details>
+        <a href="#body">Back To Top</a>
+
+
+        <h2 id="form structures">Detailed Explanation of Form Structure</h2>
+        <p>Form structure me labels, inputs, grouping, aur naming follow karke aisa layout banta hai jo user-friendly ho
+            aur
+            backend mapping easy ho.
+            Har field ka id UI linking ke liye aur name server mapping ke liye consistently use hota hai</p>
+        <a href="#body">Back To Top</a>
+
+        <h2 id="Value attributes">Name & Value Attributes</h2>
+        <p>Submission par har field key=value pair banata hai jahan key input ka name aur value user-entered data hota
+            hai.</p>
+        <p>Agar name nahi hoga to value server tak meaningful tarah nahi pahunchti</p>
+        <details>
+            <summary>Example</summary>
+            <textarea name="" id="">
+        <input type="text" name="fullName" /> <!-- sends fullName=Rohit -->
+
+    </textarea>
+        </details>
+        <a href="#body">Back To Top</a>
+
+        <h2 id="Attribute">Using name Attribute</h2>
+        <p>name attribute server ko batata hai ki yeh kaunsa column/field fill karna hai, isliye yeh backend ke contract
+            ka hissa
+            hota hai</p>
+        <p>Ek hi logical group (jaise gender) me sab radio buttons ka name same hota hai taaki ek hi key ki sahi value
+            jaye.</p>
+        <a href="#body">Back To Top</a>
+
+        <h2 id="Radio BUttons">Radio Buttons</h2>
+        <p>Radio buttons single-choice inputs hote hain; ek group me sirf ek select hota hai aur sabka name same hota
+            hai.</p>
+        <p>Value attribute se “on” ki jagah meaningful value (male/female/other) bhejte hain</p>
+        <details>
+            <summary>Example</summary>
+            <textarea name="" id="">
+        <label><input type="radio" name="gender" value="male" /> Male</label>
+        <label><input type="radio" name="gender" value="female" /> Female</label>
+    </textarea>
+        </details>
+        <a href="#body">Back To Top</a>
+
+        <h2 id="Attribute for">for Attribute</h2>
+        <p>label ka for attribute us input ki id se match hota hai jisse label par click karne se input active/checked
+            ho jata hai</p>
+        <p>Yeh accessibility aur click-target dono improve karta hai.</p>
+        <details>
+            <summary>Example</summary>
+            <textarea name="" id="">
+    <label for="email">Email</label>
+    <input id="email" type="email" name="email" />
+
+    </textarea>
+        </details>
+        <a href="#body">Back To Top</a>
+
+
+        <h2 id="setting">Setting Radio Button Values</h2>
+        <p>Radio/checkbox par value set na ho to submit par “on” jata hai, isliye value="male" ya value="python" jaisi
+            clear values
+            deni chahiye.</p>
+        <p>Isse server par direct meaningful data store ho pata hai bina guesswork ke</p>
+        <a href="#body">Back To Top</a>
+
+        <h2 id="Checkbox">Checkboxes</h2>
+        <p>Checkboxes multi-select ke liye hote hain; ek se zyada options tick ho sakte hain aur har selected checkbox
+            apni value
+            submit karta hai.</p>
+        <p>Same name use karke server ko list of values milti hai (e.g., subject=Python aur subject=JavaScript)</p>
+        <details>
+            <summary>Example</summary>
+            <textarea name="" id="">
+<label><input type="checkbox" name="subject" value="Python" /> Python</label>
+<label><input type="checkbox" name="subject" value="JavaScript" /> JavaScript</label>
+
+    </textarea>
+        </details>
+        <a href="#body">Back To Top</a>
+
+        <h2 id="placeholder">Placeholder Attribute</h2>
+        <p>placeholder input box ke andar light hint text dikhata hai jo user type karte hi gayab ho jata hai.</p>
+        <p>Yeh data submit nahi hota, sirf guidance ke liye hota hai.</p>
+        <details>
+            <summary>Example</summary>
+            <textarea name="" id="">
+<input type="text" name="city" placeholder="Enter your city" />
+
+    </textarea>
+        </details>
+        <a href="#body">Back To Top</a>
+
+        <h2 id="types of Input">Types of Input Attributes</h2>
+
+        <ul>
+            <li><b>input type="date"</b></li>
+            <li><b>input type="file"</b></li>
+            <li><b>input type="email"</b></li>
+            <li><b>input type="tel"</b></li>
+        </ul>
+
+        <p><b>input type="date"</b></p>
+        <p>type="date" date picker deta hai jisse YYYY-MM-DD format me date aati hai aur min/max se range limit ki ja
+            sakti hai</p>
+        <details>
+            <summary>Example</summary>
+            <textarea name="" id="">
+<input type="date" name="dob" min="1990-01-01" max="2025-12-31" />
+
+    </textarea>
+        </details>
+
+        <p><b>input type="file"</b></p>
+        <p>type="file" user ko file choose karne deta hai; files bhejne ke liye form me enctype="multipart/form-data"
+            use karna
+            padta hai</p>
+        <details>
+            <summary>Example</summary>
+            <textarea name="" id="">
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="avatar" accept="image/*" />
+</form>
+
+    </textarea>
+        </details>
+
+        <p><b>input type="email"</b></p>
+        <p>type="email" basic email format validation deta hai aur mobile par relevant keyboard lata hai.</p>
+        <details>
+            <summary>Example</summary>
+            <textarea name="" id="">
+<input type="email" name="email" required />
+</form>
+
+    </textarea>
+        </details>
+
+        <p><b>input type="tel"</b></p>
+        <p>type="tel" telephone number input ke liye hai; by default strict validation nahi hoti, isliye pattern se
+            format enforce
+            kiya ja sakta hai</p>
+        <details>
+            <summary>Example</summary>
+            <textarea name="" id="">
+<input type="tel" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" />
+
+        </form>
+        
+            </textarea>
+        </details>
+        <a href="#body">Back To Top</a>
+
+        <h2 id="textarea">textarea Tag</h2>
+        <p> multi-line text input deta hai comments/address jaise lambi entries ke liye.[11] rows/cols ya CSS se size
+            control hota hai. <br>
+            textarea name="address" rows="4" cols="30" placeholder="Full address"</p>
+        <a href="#body">Back To Top</a>
+
+        <h2 id="select tag">select Tag</h2>
+        <p> <b>select</b>> ek HTML form element hai jo dropdown menu banata hai.
+            Iske andar options dikhane ke liye <b>option></b> tag ka use hota hai.</p>
+        <a href="#body">Back To Top</a>
+
+        <h2 id="option">option Tag</h2>
+        <p> option> ek selectable item define karta hai; value attribute server ko bheji jane wali exact value set karta
+            hai.
+            User-facing text aur submitted value alag ho sakte hain for clarity.
+            option value="IN">India</option>
+        </p>
+        <a href="#body">Back To Top</a>
+
+        <h2 id="button">Button Tag</h2>
+        <p> <b>button</b> ek HTML tag hai jo ek clickable button banata hai.</p>
+        <a href="#body">Back To Top</a>
+        <br>
+        <br>
+        <br>
+        <a href="Home.html"><b>Go to Home</b></a>
+        <br>
+        <a href="lecture1.html"><b>Go to Page 1</b></a>
+        <br>
+        <a href="lecturs2.html"><b>Go to Page 2</b></a>
+        <br>
+        <a href="lectures3.html"><b>Go To page 3</b></a>
+        <br>
+        <a href="internetworklecture.html"><b>Go to Page 5</b></a>
+        <br>
+        <a href="lecture6.html"><b>Go to Page 6</b></a>
+        <br>
+        <br>
+        <br>
+
+        <!-- start navbar  -->
+        <hr>
+        <center>
+            <nav>
+                <span><b>🎓 Happy Learning! Keep Practicing HTML 💪</b></span>
+                <p>Made by <b>Rajan Awasthi</b> © 2025 HTML Learning Hub | Made for Beginners</p>
+            </nav>
+        </center>
+        <hr>
+        <!-- End navbar  -->
+
+</body>
+
+</html>
